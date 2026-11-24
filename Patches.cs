@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SchoolChange.Patches
 {
-  // Player's height patch
+  // Player's height patch (override method lol)
     [HarmonyPatch(typeof(CharacterController), "height", MethodType.Setter)]
     internal static class CharacterControllerHeightPatch
     {
